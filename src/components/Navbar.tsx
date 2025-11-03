@@ -120,7 +120,7 @@ export default function Navbar({ bookingUrl }: { bookingUrl: string }) {
             onFocus={() => setLangOpen(true)}
           >
             <button
-              className="px-2 py-1 rounded-md text-white/80 hover:text-white hover:bg-white/10 flex items-center gap-2"
+              className="px-2 py-1 rounded-md text-white/80 hover:text-white hover:bg:white/10 flex items-center gap-2"
               aria-haspopup="menu"
               aria-expanded={langOpen}
             >
