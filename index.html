@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function() {
+        try {
+          var h = window.location.hash;
+          var path = window.location.pathname.toLowerCase();
+          var langFromPath = (path.match(/\/(en|fr)\/index\.html$/) || [])[1];
+          var lang = langFromPath || 'es';
+          if (!h || h === '#' || h === '#/') {
+            var base = window.location.origin + window.location.pathname;
+            window.location.replace(base + '#/' + lang + '/');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>IFNI SUNSET | Authentic Moroccan Guesthouse in Sidi Ifni</title>
+    <meta name="description" content="Authentic Moroccan guesthouse in Sidi Ifni with sunset terrace dining, traditional cuisine, warm hospitality, and adventures from surfing to cultural tours." />
+    <link rel="canonical" href="https://ifni-sunset-auberge.example/" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="IFNI SUNSET" />
+    <meta property="og:description" content="Peaceful retreat in Sidi Ifni. Best sunset views, Moroccan meals & café, rooms with ocean breeze." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ifni-sunset-auberge.example/" />
+    <meta property="og:image" content="/og-cover.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IFNI SUNSET" />
+    <meta name="twitter:description" content="Authentic Moroccan hospitality where the mountains meet the sea." />
+    <meta name="twitter:image" content="/og-cover.jpg" />
+
+    <!-- Skip link styles -->
+    <style>
+      .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+      .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem 1rem;background:#0b0f19;color:#fff;z-index:9999;border-radius:.5rem;border:1px solid #fff3}
+    </style>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload hero video -->
+    <link rel="preload" as="video" href="/hero-loop.webm" type="video/webm" />
+    <link rel="preload" as="video" href="/hero.mp4" type="video/mp4" />
+
+    <!-- JSON-LD Boutique Hotel Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "IFNI SUNSET",
+      "description": "Authentic Moroccan guesthouse in Sidi Ifni with sunset terrace dining and warm hospitality.",
+      "image": ["/og-cover.jpg"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hay Adoufgir",
+        "addressLocality": "Sidi Ifni",
+        "addressCountry": "MA"
+      },
+      "url": "https://ifni-sunset-auberge.example/",
+      "priceRange": "$$",
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Terrace dining with sunset views", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Traditional Moroccan cuisine", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Surfing lessons & guided tours", "value": true}
+      ]
+    }
+    </script>
+  </head>
+  <body class="font-sans bg-neutral-950 text-white">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

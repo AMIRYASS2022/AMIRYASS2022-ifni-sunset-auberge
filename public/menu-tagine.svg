@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="tagineBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="tagineLid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <filter id="tagineShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <g filter="url(#tagineShadow)">
+    <!-- Base plate -->
+    <ellipse cx="48" cy="64" rx="26" ry="8" fill="url(#tagineBody)"/>
+    <!-- Lid cone -->
+    <path d="M28 62c10-16 18-26 20-26s10 10 20 26" fill="url(#tagineLid)"/>
+    <!-- Knob -->
+    <circle cx="48" cy="30" r="5" fill="#fb923c"/>
+    <!-- Highlight -->
+    <path d="M34 60c6-10 12-18 14-18s8 8 14 18" stroke="#fff" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

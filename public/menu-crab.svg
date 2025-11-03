@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 96" width="128" height="96" aria-hidden="true">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized minimal crab: shell, claws, legs, eyes -->
+  <g fill="url(#shell)" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1">
+    <!-- Shell -->
+    <ellipse cx="64" cy="50" rx="22" ry="16"/>
+    <!-- Eyes -->
+    <circle cx="56" cy="40" r="2" fill="#ffffff"/>
+    <circle cx="72" cy="40" r="2" fill="#ffffff"/>
+    <!-- Left claw -->
+    <path d="M36 44 C28 36,26 30,30 26 L40 34 L44 38 C42 41,40 43,36 44 Z"/>
+    <!-- Right claw -->
+    <path d="M92 44 C100 36,102 30,98 26 L88 34 L84 38 C86 41,88 43,92 44 Z"/>
+    <!-- Left legs -->
+    <path d="M48 60 l-10 8 m12 -6 l-10 10 m14 -8 l-12 12" stroke-width="2" fill="none"/>
+    <!-- Right legs -->
+    <path d="M80 60 l10 8 m-12 -6 l10 10 m-14 -8 l12 12" stroke-width="2" fill="none"/>
+  </g>
+</svg>

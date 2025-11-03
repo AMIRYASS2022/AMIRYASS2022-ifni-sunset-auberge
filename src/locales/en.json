@@ -1,0 +1,16 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.rooms": "Rooms",
+  "nav.dining": "Dining",
+  "nav.activities": "Activities",
+  "nav.gallery": "Gallery",
+  "nav.offers": "Offers & Packages",
+  "nav.contact": "Contact",
+  "hero.title": "Ifni Sunset Auberge",
+  "hero.welcome": "Welcome to Ifni Sunset",
+  "footer.address": "Address",
+  "footer.whatsapp": "WhatsApp",
+  "aria.contact.whatsapp": "Chat on WhatsApp",
+  "aria.contact.map": "Location map"
+}

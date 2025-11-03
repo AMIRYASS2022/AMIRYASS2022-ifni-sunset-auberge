@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="96" viewBox="0 0 1200 96" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef8a4d" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#e25b19" stop-opacity="0.8"/>
+    </linearGradient>
+    <g id="star" opacity="0.9">
+      <rect x="-10" y="-10" width="20" height="20" rx="2" transform="rotate(45)" fill="url(#g)"/>
+      <rect x="-6" y="-6" width="12" height="12" rx="2" transform="rotate(45)" fill="#111827" stroke="#f0a36a" stroke-opacity="0.35" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="96" fill="transparent"/>
+
+  <g transform="translate(0,48)">
+    <!-- Repeat motif across the width -->
+    <g transform="translate(60,0)"><use href="#star"/></g>
+    <g transform="translate(140,0)"><use href="#star"/></g>
+    <g transform="translate(220,0)"><use href="#star"/></g>
+    <g transform="translate(300,0)"><use href="#star"/></g>
+    <g transform="translate(380,0)"><use href="#star"/></g>
+    <g transform="translate(460,0)"><use href="#star"/></g>
+    <g transform="translate(540,0)"><use href="#star"/></g>
+    <g transform="translate(620,0)"><use href="#star"/></g>
+    <g transform="translate(700,0)"><use href="#star"/></g>
+    <g transform="translate(780,0)"><use href="#star"/></g>
+    <g transform="translate(860,0)"><use href="#star"/></g>
+    <g transform="translate(940,0)"><use href="#star"/></g>
+    <g transform="translate(1020,0)"><use href="#star"/></g>
+    <g transform="translate(1100,0)"><use href="#star"/></g>
+  </g>
+</svg>

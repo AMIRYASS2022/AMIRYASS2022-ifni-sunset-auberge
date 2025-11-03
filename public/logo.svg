@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="IFNI SUNSET logo">
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="50%" stop-color="#FF5A5F"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle background with subtle gradient and rounded shape -->
+  <rect x="8" y="8" width="176" height="176" rx="32" fill="#0B0B0B" />
+
+  <!-- Sun (semi circle) -->
+  <path d="M32 120a64 64 0 1 1 128 0" fill="url(#sunset)" />
+
+  <!-- Horizon line -->
+  <rect x="24" y="120" width="144" height="2" fill="#ffffff" opacity="0.8" />
+
+  <!-- Waves -->
+  <path d="M32 138c8 0 12-8 20-8s12 8 20 8s12-8 20-8s12 8 20 8s12-8 20-8s12 8 20 8" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+  <path d="M32 150c8 0 12-6 20-6s12 6 20 6s12-6 20-6s12 6 20 6s12-6 20-6s12 6 20 6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+
+  <!-- Minimal star/sun sparkle -->
+  <circle cx="148" cy="48" r="2" fill="#fff" opacity="0.85" />
+  <circle cx="156" cy="56" r="1.5" fill="#fff" opacity="0.75" />
+</svg>
