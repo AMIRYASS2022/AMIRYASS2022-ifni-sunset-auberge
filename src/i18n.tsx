@@ -291,6 +291,7 @@ const dicts: Record<Lang, Dict> = {
     'menu.item.tagines.berberTagine': 'Berber tagine',
     'menu.item.tagines.octopusTagine': 'Octopus tagine',
     'menu.item.tagines.fishTagine': 'Fish tagine',
+    'menu.item.tagines.vegetableTagine': 'Vegetable tagine',
     'menu.item.tagines.chickenTagine': 'Chicken tagine',
     'menu.item.tagines.beefTagine': 'Beef tagine',
     'menu.item.tagines.keftaTagine': 'Kefta tagine',
