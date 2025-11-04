@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/tailwind.css';
 import IndexPage from './pages/index';
 import { I18nProvider, useI18n } from './i18n';
-import { HashRouter, Routes, Route, Navigate, Outlet, useParams, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, Outlet, useParams, useNavigate, useLocation } from 'react-router-dom';
 import PrivacyPage from './pages/Privacy';
 import TermsPage from './pages/Terms';
 import OffersPage from './pages/Offers';
@@ -91,7 +91,7 @@ function PartnersRoute() {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <I18nProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           {/* Redirect base to current i18n language */}
           <Route path="/" element={<ToDefaultLangHome />} />
@@ -108,7 +108,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           {/* Fallback */}
           <Route path="*" element={<ToDefaultLangHome />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </I18nProvider>
   </React.StrictMode>
 );

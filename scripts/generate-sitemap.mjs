@@ -4,7 +4,7 @@ import { join } from 'node:path';
 const base = (process.env.URL || process.env.DEPLOY_PRIME_URL || 'https://example.com').replace(/\/$/, '');
 const outDir = join(process.cwd(), 'dist');
 
-// Locales and routes based on HashRouter config in src/main.tsx
+// Locales and routes based on BrowserRouter config in src/main.tsx
 const locales = ['es', 'en', 'fr'];
 const routes = ['', 'privacy', 'terms', 'offers', 'partners'];
 
@@ -14,8 +14,8 @@ const urls = [];
 for (const lang of locales) {
   for (const route of routes) {
     const path = route ? `/${route}` : '/';
-    // HashRouter: URLs must include #/lang/...
-    const loc = `${base}/#/${lang}${path}`;
+    // BrowserRouter: clean URLs without hash
+    const loc = `${base}/${lang}${path}`;
     urls.push({ loc, lastmod: now, changefreq: 'weekly', priority: route ? '0.7' : '0.8' });
   }
 }
