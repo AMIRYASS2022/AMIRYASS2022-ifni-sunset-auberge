@@ -14,8 +14,8 @@ type I18nContextValue = {
   setLang: (lang: Lang) => void;
 };
 
-const dicts: Record<Lang, Dict> = {
-  en: {
+  const dicts: Record<Lang, Dict> = {
+    en: {
     'brand.name': 'IFNI SUNSET',
     // Meta
     'meta.title': 'Ifni Sunset Auberge — Authentic Moroccan Guesthouse in Sidi Ifni',
@@ -332,7 +332,7 @@ const dicts: Record<Lang, Dict> = {
     'legal.terms.liability': 'We aim for accurate information but make no warranty; your use is at your own risk.',
     'legal.terms.contact': 'For any concerns about these terms, contact Ifnisunset@gmail.com.',
   },
-  es: {
+    es: {
     'brand.name': 'IFNI SUNSET',
     // Meta
     'meta.title': 'Ifni Sunset Auberge — Casa de huéspedes auténtica en Sidi Ifni',
@@ -644,7 +644,7 @@ const dicts: Record<Lang, Dict> = {
     'legal.terms.liability': 'Buscamos información precisa, pero no ofrecemos garantía; el uso es bajo tu responsabilidad.',
     'legal.terms.contact': 'Para cualquier duda sobre estos términos, escribe a Ifnisunset@gmail.com.',
   },
-  fr: {
+    fr: {
     'brand.name': 'IFNI SUNSET',
     // Meta
     'meta.title': 'Ifni Sunset Auberge — Maison d’hôtes authentique à Sidi Ifni',
@@ -1105,3 +1105,42 @@ export function useI18n() {
   if (!ctx) throw new Error('useI18n must be used within I18nProvider');
   return ctx;
 }
+      // Testimonials
+      'nav.testimonials': 'Testimonials',
+      'testimonials.title': 'Guest Testimonials',
+      'testimonials.subtitle': 'Real words from guests who stayed with us.',
+      'testimonials.items.anna.name': 'Anna M.',
+      'testimonials.items.anna.origin': 'Germany',
+      'testimonials.items.anna.quote': 'Wonderful stay! Cozy rooms, delicious tagines, and super warm hosts.',
+      'testimonials.items.omar.name': 'Omar A.',
+      'testimonials.items.omar.origin': 'Morocco',
+      'testimonials.items.omar.quote': 'Terrace sunsets are unforgettable. Great location and friendly staff.',
+      'testimonials.items.lucie.name': 'Lucie P.',
+      'testimonials.items.lucie.origin': 'France',
+      'testimonials.items.lucie.quote': 'Loved the ocean views and the calm atmosphere. Highly recommended!',
+      // Testimonios
+      'nav.testimonials': 'Testimonios',
+      'testimonials.title': 'Testimonios de nuestros huéspedes',
+      'testimonials.subtitle': 'Palabras reales de quienes se han alojado con nosotros.',
+      'testimonials.items.anna.name': 'Anna M.',
+      'testimonials.items.anna.origin': 'Alemania',
+      'testimonials.items.anna.quote': '¡Estancia maravillosa! Habitaciones acogedoras, tayines deliciosos y anfitriones muy cálidos.',
+      'testimonials.items.omar.name': 'Omar A.',
+      'testimonials.items.omar.origin': 'Marruecos',
+      'testimonials.items.omar.quote': 'Los atardeceres en la terraza son inolvidables. Buena ubicación y personal amable.',
+      'testimonials.items.lucie.name': 'Lucie P.',
+      'testimonials.items.lucie.origin': 'Francia',
+      'testimonials.items.lucie.quote': 'Me encantaron las vistas al océano y el ambiente tranquilo. ¡Muy recomendado!',
+      // Témoignages
+      'nav.testimonials': 'Témoignages',
+      'testimonials.title': 'Témoignages de nos hôtes',
+      'testimonials.subtitle': 'Des avis authentiques de voyageurs qui ont séjourné chez nous.',
+      'testimonials.items.anna.name': 'Anna M.',
+      'testimonials.items.anna.origin': 'Allemagne',
+      'testimonials.items.anna.quote': 'Séjour merveilleux ! Chambres confortables, tajines délicieux et hôtes très chaleureux.',
+      'testimonials.items.omar.name': 'Omar A.',
+      'testimonials.items.omar.origin': 'Maroc',
+      'testimonials.items.omar.quote': 'Les couchers de soleil sur la terrasse sont inoubliables. Emplacement idéal et équipe sympathique.',
+      'testimonials.items.lucie.name': 'Lucie P.',
+      'testimonials.items.lucie.origin': 'France',
+      'testimonials.items.lucie.quote': "J'ai adoré la vue sur l'océan et l'atmosphère calme. Fortement recommandé !",

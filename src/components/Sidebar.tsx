@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaPhone } from 'react-icons/fa';
+import { FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaPhone, FaQuoteLeft } from 'react-icons/fa';
 import { useI18n } from '../i18n';
 
 export default function Sidebar({ bookingUrl }: { bookingUrl: string }) {
@@ -10,6 +10,7 @@ export default function Sidebar({ bookingUrl }: { bookingUrl: string }) {
     { href: '#dining', key: 'nav.dining', Icon: FaUtensils },
     { href: '#activities', key: 'nav.activities', Icon: FaRoute },
     { href: '#gallery', key: 'nav.gallery', Icon: FaImages },
+    { href: '#testimonials', key: 'nav.testimonials', Icon: FaQuoteLeft },
     { href: '#contact', key: 'nav.contact', Icon: FaPhone },
   ];
 

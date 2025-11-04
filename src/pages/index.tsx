@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import RoomsGrid from '../components/RoomsGrid';
 import Activities from '../components/Activities';
 import Gallery from '../components/Gallery';
+import Testimonials from '../components/Testimonials';
 import Menu from '../components/Menu';
 import MenuGallery from '../components/MenuGallery';
 import Footer from '../components/Footer';
@@ -65,6 +66,13 @@ export default function IndexPage({ bookingUrl }: { bookingUrl: string }) {
           <div className="w-full bg-white text-neutral-900">
             <div className="mx-auto max-w-6xl">
               <RoomsGrid rooms={ROOMS_CARDS.map((r) => ({ ...r, bookingUrl }))} />
+            </div>
+          </div>
+
+          {/* Testimonials — full-width dark background */}
+          <div className="w-full bg-neutral-950">
+            <div className="mx-auto max-w-6xl px-6 py-12">
+              <Testimonials />
             </div>
           </div>
 

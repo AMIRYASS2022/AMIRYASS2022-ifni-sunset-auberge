@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaChevronDown } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaChevronDown, FaQuoteLeft } from 'react-icons/fa';
 import { useI18n } from '../i18n';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ export default function Navbar({ bookingUrl }: { bookingUrl: string }) {
     { href: '#dining', label: t('nav.dining'), Icon: FaUtensils },
     { href: '#activities', label: t('nav.activities'), Icon: FaRoute },
     { href: '#gallery', label: t('nav.gallery'), Icon: FaImages },
+    { href: '#testimonials', label: t('nav.testimonials'), Icon: FaQuoteLeft },
   ];
 
   function go(href: string) {
