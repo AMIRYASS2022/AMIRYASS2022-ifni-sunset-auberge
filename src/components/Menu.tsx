@@ -36,7 +36,8 @@ function DigitalMenuCard({ className = '', style }: { className?: string; style?
   useEffect(() => {
     const origin = window.location.origin;
     const envQr = (import.meta as any).env?.VITE_QR_URL as string | undefined;
-    const target = envQr ? envQr : `${origin}/#dining`;
+    // Default QR target to English menu section when not overridden via env
+    const target = envQr ? envQr : `${origin}/#/en/?section=dining`;
     setQrUrl(`https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=0&data=${encodeURIComponent(target)}`);
     setIsLocal(origin.includes('localhost') && !envQr);
   }, []);
