@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
     "scrape:preview": "node scripts/scrape-images.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
