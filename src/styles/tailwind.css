@@ -1,7 +1,9 @@
 /* tailwind base import and overrides */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 
 :root {
   color-scheme: dark;
@@ -301,3 +303,13 @@ html, body, #root {
   100% { transform: translate3d(0, 0, 0) scale(1); }
 }
 .animate-tagine { animation: tagine-bounce var(--dur, 18s) ease-in-out infinite; }
+ 
+/* Marquee auto-scroll for testimonial row */
+@layer utilities {
+  @keyframes marquee-left {
+    0% { transform: translate3d(0,0,0); }
+    100% { transform: translate3d(-50%,0,0); }
+  }
+  .marquee-track { will-change: transform; animation: marquee-left var(--marqueeDur, 40s) linear infinite; }
+  .marquee-paused:hover { animation-play-state: paused; }
+}

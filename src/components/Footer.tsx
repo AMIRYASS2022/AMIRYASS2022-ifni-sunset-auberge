@@ -38,6 +38,32 @@ export default function Footer() {
               <span className="font-medium">{t('footer.email')} </span>
               Ifnisunset@gmail.com
             </p>
+            {/* Redes sociales debajo de Contacto con etiqueta */}
+            <div className="mt-3 flex items-center gap-3" aria-label="Redes sociales">
+              <span className="text-white/80">{t('footer.follow')}:</span>
+              <a
+                href="https://www.facebook.com/profile.php?id=61575307660236"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                <FaFacebook className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Facebook</span>
+              </a>
+              <a
+                href="https://www.instagram.com/ifni_sunset/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <FaInstagram className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            </div>
           </div>
 
           {/* Availability */}
@@ -93,7 +119,7 @@ export default function Footer() {
             <div className="mt-3 rounded-lg overflow-hidden border border-white/10">
               <iframe
                 title={t('footer.map.title')}
-                src="https://www.google.com/maps?q=Sidi%20Ifni&output=embed"
+                src="https://www.google.com/maps?q=Ifni%20Sunset%20Auberge%2C%20Sidi%20Ifni&output=embed"
                 width="100%"
                 height="220"
                 loading="lazy"
@@ -107,34 +133,9 @@ export default function Footer() {
         {/* Legal */}
         <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-sm md:flex-row">
           <p className="text-white/60">© {new Date().getFullYear()} {t('brand.name')}</p>
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-6 items-center justify-center md:flex-1">
             <a href={`#/${lang}/privacy`} className="text-white/80 hover:text-white">{t('legal.privacy.title')}</a>
             <a href={`#/${lang}/terms`} className="text-white/80 hover:text-white">{t('legal.terms.title')}</a>
-            {/* Redes sociales en footer */}
-            <div className="flex items-center gap-3" aria-label="Redes sociales">
-              <a
-                href="https://www.facebook.com/profile.php?id=61575307660236"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white"
-                aria-label="Facebook"
-                title="Facebook"
-              >
-                <FaFacebook className="h-5 w-5" aria-hidden="true" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a
-                href="https://www.instagram.com/ifni_sunset/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/70 hover:text-white"
-                aria-label="Instagram"
-                title="Instagram"
-              >
-                <FaInstagram className="h-5 w-5" aria-hidden="true" />
-                <span className="sr-only">Instagram</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>

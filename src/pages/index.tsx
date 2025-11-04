@@ -6,6 +6,7 @@ import RoomsGrid from '../components/RoomsGrid';
 import Activities from '../components/Activities';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
+import Stats from '../components/Stats';
 import Menu from '../components/Menu';
 import MenuGallery from '../components/MenuGallery';
 import Footer from '../components/Footer';
@@ -73,6 +74,13 @@ export default function IndexPage({ bookingUrl }: { bookingUrl: string }) {
           <div className="w-full bg-neutral-950">
             <div className="mx-auto max-w-6xl px-6 py-12">
               <Testimonials />
+            </div>
+          </div>
+
+          {/* Stats — full-width dark background */}
+          <div className="w-full bg-neutral-950">
+            <div className="mx-auto max-w-6xl px-6 py-4">
+              <Stats />
             </div>
           </div>
 

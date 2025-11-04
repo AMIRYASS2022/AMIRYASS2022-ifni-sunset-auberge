@@ -27,6 +27,8 @@ export default function Hero({ bookingUrl, lottieData, imageUrl, disableAnimatio
     if (v) v.playbackRate = 0.25;
   }, []);
 
+  // Removed sea sound effect and controls per request
+
   const effectiveDisable = disableAnimation || reduceMotion;
   const bgPos = fixedBackground ? 'fixed' : 'absolute';
   const bgZ = fixedBackground ? '-z-10' : '';
@@ -96,6 +98,8 @@ export default function Hero({ bookingUrl, lottieData, imageUrl, disableAnimatio
           </div>
         </div>
       </motion.div>
+
+      {/* Sound controls removed */}
 
       {/* subtle moving stars or sun overlay (CSS) */}
       <div className="pointer-events-none fixed bottom-6 right-6 text-white/30">🌅</div>

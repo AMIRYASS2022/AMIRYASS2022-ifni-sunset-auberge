@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBars, FaTimes, FaHome, FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaPhone, FaGift, FaQuoteLeft } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaInfoCircle, FaBed, FaUtensils, FaRoute, FaImages, FaPhone, FaGift, FaQuoteLeft, FaHandshake } from 'react-icons/fa';
 import { useI18n } from '../i18n';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -12,13 +12,14 @@ export default function MobileNav({ bookingUrl }: { bookingUrl: string }) {
   const links = [
     { href: '#home', label: t('nav.home'), Icon: FaHome },
     { href: '#about', label: t('nav.about'), Icon: FaInfoCircle },
+    { href: '/partners', label: t('nav.partners'), Icon: FaHandshake },
+    { href: '#contact', label: t('nav.contact'), Icon: FaPhone },
     { href: '#rooms', label: t('nav.rooms'), Icon: FaBed },
     { href: '#dining', label: t('nav.dining'), Icon: FaUtensils },
     { href: '#activities', label: t('nav.activities'), Icon: FaRoute },
     { href: '#gallery', label: t('nav.gallery'), Icon: FaImages },
     { href: '#testimonials', label: t('nav.testimonials'), Icon: FaQuoteLeft },
     { href: '/offers', label: t('nav.offers'), Icon: FaGift },
-    { href: '#contact', label: t('nav.contact'), Icon: FaPhone },
   ];
 
   function closeAndGo(href: string) {

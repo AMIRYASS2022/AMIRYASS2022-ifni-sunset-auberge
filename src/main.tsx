@@ -8,6 +8,8 @@ import PrivacyPage from './pages/Privacy';
 import TermsPage from './pages/Terms';
 import OffersPage from './pages/Offers';
 
+import PartnersPage from './pages/Partners';
+
 const BOOKING_URL = 'https://www.booking.com/hotel/ma/ifni-sunset.en-gb.html';
 
 // Añade URL de Booking según idioma actual
@@ -81,6 +83,10 @@ function OffersRoute() {
   const { lang } = useI18n();
   return <OffersPage bookingUrl={bookingUrlFor(lang)} />;
 }
+function PartnersRoute() {
+  const { lang } = useI18n();
+  return <PartnersPage bookingUrl={bookingUrlFor(lang)} />;
+}
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -96,6 +102,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="privacy" element={<PrivacyRoute />} />
             <Route path="terms" element={<TermsRoute />} />
             <Route path="offers" element={<OffersRoute />} />
+            <Route path="partners" element={<PartnersRoute />} />
           </Route>
 
           {/* Fallback */}
